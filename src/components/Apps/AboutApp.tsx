@@ -1,6 +1,6 @@
 import { Window } from '../UI/Window';
-import { User, MapPin, Clock, Zap, Brain, Users, Target } from 'lucide-react';
-import { profile } from '../../data/cvData';
+import { User, MapPin, Clock, Zap, Brain, Users, Target, GraduationCap } from 'lucide-react';
+import { profile, education } from '../../data/cvData';
 import { useWindowStore } from '../../stores/windowStore';
 import { motion } from 'framer-motion';
 import profilePhoto from '../../assets/mb_pp.jpeg';
@@ -105,6 +105,75 @@ export function AboutApp() {
               </motion.li>
             ))}
           </ul>
+        </div>
+
+        {/* Education */}
+        <div>
+          <h2 className="text-sm font-medium text-white/40 uppercase tracking-wide mb-3 flex items-center gap-2">
+            <GraduationCap className="w-4 h-4" />
+            Education
+          </h2>
+
+          {/* Higher Education */}
+          <div className="mb-4">
+            <h3 className="text-xs font-medium text-white/30 uppercase tracking-wide mb-2">
+              Higher Education
+            </h3>
+            <div className="space-y-2">
+              {education
+                .filter((edu) => edu.level === 'higher')
+                .map((edu, i) => (
+                  <motion.div
+                    key={edu.id}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.1 }}
+                    className="p-3 rounded-lg bg-white/5 border border-white/5"
+                  >
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="text-sm font-medium text-white">
+                          {edu.degree}
+                          {edu.specialization && (
+                            <span className="text-blue-400"> ({edu.specialization})</span>
+                          )}
+                        </p>
+                        <p className="text-xs text-white/50">{edu.institution}</p>
+                      </div>
+                      <span className="text-xs text-white/40">{edu.period}</span>
+                    </div>
+                  </motion.div>
+                ))}
+            </div>
+          </div>
+
+          {/* Secondary Education */}
+          <div>
+            <h3 className="text-xs font-medium text-white/30 uppercase tracking-wide mb-2">
+              Secondary Education
+            </h3>
+            <div className="space-y-2">
+              {education
+                .filter((edu) => edu.level === 'secondary')
+                .map((edu, i) => (
+                  <motion.div
+                    key={edu.id}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.1 }}
+                    className="p-2 rounded-lg bg-white/5 border border-white/5"
+                  >
+                    <div className="flex justify-between items-center">
+                      <div>
+                        <p className="text-sm text-white/80">{edu.degree}</p>
+                        <p className="text-xs text-white/40">{edu.institution}</p>
+                      </div>
+                      <span className="text-xs text-white/40">{edu.period}</span>
+                    </div>
+                  </motion.div>
+                ))}
+            </div>
+          </div>
         </div>
       </div>
     </Window>

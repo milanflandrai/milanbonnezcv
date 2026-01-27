@@ -287,15 +287,99 @@ export const projects: Project[] = [
   },
 ];
 
+export interface Education {
+  id: string;
+  institution: string;
+  degree: string;
+  specialization?: string;
+  period: string;
+  level: 'secondary' | 'higher';
+  completed: boolean;
+}
+
+export const education: Education[] = [
+  // Higher Education
+  {
+    id: 'vives-3',
+    institution: 'Hogeschool Vives, Kortrijk',
+    degree: 'Bachelor Applied Informatics',
+    specialization: 'Business & IT',
+    period: '2024 – 2025',
+    level: 'higher',
+    completed: true,
+  },
+  {
+    id: 'vives-2b',
+    institution: 'Hogeschool Vives, Kortrijk',
+    degree: 'Applied Informatics',
+    specialization: 'Business & IT',
+    period: '2023 – 2024',
+    level: 'higher',
+    completed: true,
+  },
+  {
+    id: 'vives-2a',
+    institution: 'Hogeschool Vives, Kortrijk',
+    degree: 'Applied Informatics',
+    specialization: 'AI',
+    period: '2023 – 2024',
+    level: 'higher',
+    completed: true,
+  },
+  {
+    id: 'vives-1',
+    institution: 'Hogeschool Vives, Kortrijk',
+    degree: 'Applied Informatics',
+    period: '2022 – 2023',
+    level: 'higher',
+    completed: true,
+  },
+  // Secondary Education
+  {
+    id: 'secondary-3',
+    institution: 'Heilige Familie, Ieper',
+    degree: 'Commerce',
+    period: '2020 – 2022',
+    level: 'secondary',
+    completed: true,
+  },
+  {
+    id: 'secondary-2',
+    institution: 'Heilige Familie, Ieper',
+    degree: 'Commerce & IT',
+    period: '2018 – 2020',
+    level: 'secondary',
+    completed: true,
+  },
+  {
+    id: 'secondary-1',
+    institution: 'VTI Ieper',
+    degree: 'Industrial Sciences',
+    period: '2016 – 2018',
+    level: 'secondary',
+    completed: true,
+  },
+];
+
 export const terminalResponses: Record<string, string> = {
   help: `Available commands:
   about       - Who I am
   skills      - Technical skills
   career      - Work experience
+  education   - Academic background
   projects    - Case-based work
   contact     - Get in touch
   hire        - Why hire me
   clear       - Clear terminal`,
+
+  education: `> Education
+
+  Bachelor Applied Informatics (Business & IT)
+  Hogeschool Vives, Kortrijk | Graduated June 2025
+
+  Specializations: Business & IT, AI
+
+  Secondary: Commerce & IT | Heilige Familie, Ieper`,
 
   about: `> Milan Bonnez
   M365 Business Consultant | AI Automation Engineer
