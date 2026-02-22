@@ -1,5 +1,5 @@
 import { Window } from '../UI/Window';
-import { Mail, Linkedin, Github, Twitter, Send, Coffee, Rocket, Users } from 'lucide-react';
+import { Mail, Linkedin, Send, Coffee, Rocket, Users } from 'lucide-react';
 import { profile } from '../../data/cvData';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -105,20 +105,15 @@ export function ContactApp() {
         <div>
           <p className="text-sm text-white/40 mb-3">Or find me on</p>
           <div className="flex gap-3">
-            {[
-              { icon: <Linkedin className="w-5 h-5" />, label: 'LinkedIn', href: '#' },
-              { icon: <Github className="w-5 h-5" />, label: 'GitHub', href: '#' },
-              { icon: <Twitter className="w-5 h-5" />, label: 'Twitter', href: '#' },
-            ].map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors"
-              >
-                {social.icon}
-                <span className="text-sm">{social.label}</span>
-              </a>
-            ))}
+            <a
+              href="https://www.linkedin.com/in/milan-bonnez-597723298/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span className="text-sm">LinkedIn</span>
+            </a>
           </div>
         </div>
 
