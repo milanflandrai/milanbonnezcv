@@ -180,53 +180,25 @@ export interface Skill {
 
 export const skills: Skill[] = [
   {
-    name: 'React / TypeScript',
-    level: 80,
-    category: 'frontend',
-    experience: '2+ years',
-    useCases: ['Web applications', 'AI-driven UIs'],
-  },
-  {
-    name: 'PostgreSQL & SQL',
-    level: 80,
-    category: 'backend',
-    experience: '2+ years',
-    useCases: ['Data modeling', 'Application backends'],
-  },
-  {
     name: 'Microsoft Power Platform',
-    level: 85,
+    level: 90,
     category: 'platform',
     experience: '2 years',
     useCases: ['Automation', 'Business applications'],
   },
   {
-    name: 'AI Automation',
-    level: 75,
+    name: 'Azure AI Foundry',
+    level: 85,
     category: 'ai',
     experience: '1+ year',
-    useCases: ['Workflow automation', 'AI-powered tools'],
+    useCases: ['AI agents', 'RAG pipelines', 'MCP servers'],
   },
   {
     name: 'n8n',
-    level: 75,
+    level: 85,
     category: 'infrastructure',
     experience: '1+ year',
     useCases: ['System integrations', 'Automations'],
-  },
-  {
-    name: 'Docker',
-    level: 70,
-    category: 'infrastructure',
-    experience: '1+ year',
-    useCases: ['Containerized deployments'],
-  },
-  {
-    name: '.NET',
-    level: 70,
-    category: 'backend',
-    experience: '1+ year',
-    useCases: ['Web APIs', 'Backend services'],
   },
   {
     name: 'Consulting & Client Communication',
@@ -234,6 +206,34 @@ export const skills: Skill[] = [
     category: 'business',
     experience: '1+ year',
     useCases: ['Requirement analysis', 'Solution design'],
+  },
+  {
+    name: 'PostgreSQL & SQL',
+    level: 75,
+    category: 'backend',
+    experience: '2+ years',
+    useCases: ['Data modeling', 'Application backends'],
+  },
+  {
+    name: 'React / TypeScript',
+    level: 70,
+    category: 'frontend',
+    experience: '2+ years',
+    useCases: ['Web applications', 'AI-driven UIs'],
+  },
+  {
+    name: 'Docker',
+    level: 65,
+    category: 'infrastructure',
+    experience: '1+ year',
+    useCases: ['Containerized deployments'],
+  },
+  {
+    name: '.NET',
+    level: 65,
+    category: 'backend',
+    experience: '1+ year',
+    useCases: ['Web APIs', 'Backend services'],
   },
 ];
 
