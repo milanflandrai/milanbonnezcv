@@ -18,7 +18,7 @@ const bootLines = [
   { text: 'PROFILE LOADED:', delay: 1700 },
   { text: '  [x] M365 Business Consultant @ Dynamate', delay: 1800 },
   { text: '  [x] Business & IT background', delay: 1900 },
-  { text: '  [x] Remote-first mindset', delay: 2000 },
+  { text: '  [x] Open to interesting opportunities', delay: 2000 },
   { text: '', delay: 2100 },
   { text: 'System ready.', delay: 2300 },
   { text: '', delay: 2400 },

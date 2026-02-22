@@ -64,12 +64,11 @@ export function TerminalApp() {
     if (command === 'projects') {
       return `> Notable Projects
 
-  1. Real-time Collaboration Engine (2024)
-  2. Predictive Analytics Platform (2020)
-  3. A/B Testing Framework (2018)
-  4. Enterprise Design System (2022)
+  1. Docker Homelab & VPS Management (2025)
+  2. AI Forex Daytrading Agent (2025)
+  3. Various Web Applications (2025)
 
-  Type 'project <name>' for details.`;
+  Open the Projects app for more details.`;
     }
 
     if (command === 'contact') {
@@ -104,7 +103,7 @@ export function TerminalApp() {
       return `> Availability
 
   Current status: ${profile.availability}
-  Notice period: 4 weeks (negotiable for the right opportunity)
+  Always open to hearing about interesting opportunities.
   Preferred start: Flexible`;
     }
 
@@ -117,13 +116,11 @@ export function TerminalApp() {
     if (q.includes('biggest') || q.includes('achievement') || q.includes('proud')) {
       return `> Biggest Achievement
 
-  Building and selling two startups before 30.
+  Building my own AI-focused company while working as
+  an M365 Business Consultant.
 
-  TaskFlow was acquired by Teamwork in 2017.
-  DataPulse was acquired by Shopify in 2021.
-
-  Combined exit value: €4M
-  Total users impacted: 2M+`;
+  Combining consulting, automation and web engineering
+  across multiple industries and use cases.`;
     }
 
     // Weaknesses
@@ -143,23 +140,25 @@ export function TerminalApp() {
     if (q.includes('stack') || q.includes('tech')) {
       return `> Preferred Tech Stack
 
-  Frontend: TypeScript, React, Next.js
-  Backend: Node.js, Python, PostgreSQL
-  Infra: AWS, Docker, Vercel
-  Tools: Git, Figma, Linear
+  Frontend: TypeScript, React
+  Backend: .NET, PostgreSQL
+  Platform: Microsoft 365, Power Platform
+  Infra: Docker, Linux, n8n
+  AI: AI APIs, Python
 
   But I'm pragmatic—I use what works best for the problem.`;
     }
 
-    // Remote work
+    // Work preferences
     if (q.includes('remote') || q.includes('office') || q.includes('hybrid')) {
       return `> Work Preferences
 
-  I thrive in both remote and hybrid settings.
-  Currently based in Amsterdam, open to relocation.
+  I'm adaptable and comfortable in any work setup—
+  remote, hybrid, or on-site.
+  Currently based in Belgium.
 
-  What matters most: async-first culture, clear
-  communication, and trust.`;
+  What matters most: interesting challenges and
+  a good team.`;
     }
 
     // Default AI response

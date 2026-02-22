@@ -3,12 +3,12 @@ export const profile = {
   title: 'M365 Business Consultant | AI Automation & Web Engineer',
   tagline: 'I build AI-driven solutions that automate work and scale businesses.',
   email: 'bonnezmilan@gmail.com',
-  location: 'Belgium (remote-first)',
-  availability: 'Open to fully remote opportunities',
+  location: 'Belgium',
+  availability: 'Open to interesting opportunities',
 
   summary: {
     recruiter:
-      'M365 Business Consultant and founder of an AI-focused company. Strong Business & IT background with hands-on experience in Power Platform, AI automation and modern web applications. Looking for a fully remote role.',
+      'M365 Business Consultant and founder of an AI-focused company. Strong Business & IT background with hands-on experience in Power Platform, AI automation and modern web applications. Always open to interesting opportunities.',
     founder:
       'Builder and consultant who designs AI-powered automations and web applications for real business problems. Focused on efficiency, scalability and practical impact.',
     techlead:
@@ -38,13 +38,13 @@ export const profile = {
     'Outcome-driven and pragmatic. I start from the business goal and design technical solutions that are maintainable and scalable.',
 
   teamRole:
-    'The builder-consultant who delivers. I combine analysis, implementation and ownership, especially in remote-first environments.',
+    'The builder-consultant who delivers. I combine analysis, implementation and ownership.',
 
   differentiators: [
     'Founder experience building AI-driven solutions',
     'Strong combination of M365, automation and web technologies',
     'Experience across multiple industries and use cases',
-    'Remote-first, self-managed and results-oriented',
+    'Self-managed and results-oriented',
   ],
 };
 
@@ -64,36 +64,6 @@ export interface CareerEntry {
 }
 
 export const career: CareerEntry[] = [
-  {
-    id: 'ai-company',
-    company: 'Independent AI Solutions Studio',
-    role: 'Founder & Engineer',
-    period: 'Dec 2025 – Present',
-    year: 2025,
-    location: 'Remote',
-    type: 'founder',
-    summary:
-      'Founder of a company focused on AI automations and AI-driven web applications for businesses.',
-    impact: [
-      'Designed and built AI-powered automations to reduce manual and repetitive work',
-      'Developed AI-driven web applications tailored to business processes',
-      'Delivered solutions across multiple sectors with different requirements',
-    ],
-    metrics: [
-      { label: 'Focus', value: 'AI automation & web applications' },
-      { label: 'Clients', value: 'Multiple sectors' },
-    ],
-    technologies: [
-      'AI APIs',
-      'n8n',
-      'Docker',
-      'React',
-      'TypeScript',
-      'PostgreSQL',
-    ],
-    learned:
-      'AI creates real value only when tightly integrated into existing business processes.',
-  },
   {
     id: 'dynamate',
     company: 'Dynamate',
@@ -245,6 +215,13 @@ export const skills: Skill[] = [
     useCases: ['Containerized deployments'],
   },
   {
+    name: '.NET',
+    level: 70,
+    category: 'backend',
+    experience: '1+ year',
+    useCases: ['Web APIs', 'Backend services'],
+  },
+  {
     name: 'Consulting & Client Communication',
     level: 80,
     category: 'business',
@@ -266,21 +243,60 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'ai-business-solutions',
-    title: 'AI-Driven Business Solutions',
+    id: 'homelab-vps',
+    title: 'Docker Homelab & VPS Management',
     description:
-      'Custom AI automations and web applications for different industries.',
+      'Personal Docker server on a local machine and a managed VPS to deepen knowledge of IT systems and infrastructure.',
     problem:
-      'Manual processes and lack of scalable digital solutions.',
+      'Wanted to improve general understanding of networking, server management and containerized deployments beyond day-to-day work.',
     approach:
-      'Integrated AI into existing workflows and built custom web applications.',
+      'Set up a Docker-based homelab on a personal laptop and a remote VPS, experimenting with self-hosted services, networking and system administration.',
     result:
-      'Reduced manual work and improved operational efficiency.',
+      'Gained hands-on experience with Linux server management, Docker orchestration, networking and infrastructure fundamentals.',
     technologies: [
+      'Docker',
+      'Linux',
+      'Nginx',
+      'VPS',
+      'Networking',
+    ],
+    year: 2025,
+  },
+  {
+    id: 'forex-ai-agent',
+    title: 'AI Forex Daytrading Agent',
+    description:
+      'An AI-powered agent that autonomously daytrades in forex markets.',
+    problem:
+      'Manual trading is time-intensive and emotionally driven, leading to inconsistent results.',
+    approach:
+      'Built an AI agent that analyzes market data and executes trades autonomously based on defined strategies.',
+    result:
+      'A fully automated trading system that operates independently and removes emotional bias from trading decisions.',
+    technologies: [
+      'Python',
       'AI APIs',
-      'n8n',
+      'Forex APIs',
+      'Docker',
+    ],
+    year: 2025,
+  },
+  {
+    id: 'web-projects',
+    title: 'Various Web Applications',
+    description:
+      'Built multiple websites and web applications for different purposes and clients.',
+    problem:
+      'Businesses and personal projects needed modern, performant web presence and tooling.',
+    approach:
+      'Designed and developed web applications using modern frameworks, focusing on clean UX and maintainability.',
+    result:
+      'Delivered functional, responsive websites tailored to specific needs.',
+    technologies: [
       'React',
       'TypeScript',
+      '.NET',
+      'Tailwind CSS',
       'PostgreSQL',
     ],
     year: 2025,
@@ -382,8 +398,8 @@ export const terminalResponses: Record<string, string> = {
   Secondary: Commerce & IT | Heilige Familie, Ieper`,
 
   about: `> Milan Bonnez
-  M365 Business Consultant | AI Automation Engineer
-  Remote-first
+  M365 Business Consultant | AI Automation & Web Engineer
+  Belgium
 
   I build AI-driven automations and digital workplace solutions
   with a strong focus on real business impact.`,
@@ -392,10 +408,10 @@ export const terminalResponses: Record<string, string> = {
 
   1. Founder mindset with consulting experience
   2. Strong M365 + AI automation skillset
-  3. Comfortable working fully remote
+  3. Adaptable to any work environment
   4. Focused on outcomes, not output
 
-  Looking for a fully remote role that allows flexibility and travel.
+  Always open to interesting opportunities.
 
   Contact: bonnezmilan@gmail.com`,
 
