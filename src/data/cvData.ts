@@ -73,18 +73,22 @@ export const career: CareerEntry[] = [
     location: 'Remote / Belgium',
     type: 'fulltime',
     summary:
-      'Consultant specializing in building automations and AI agents within the Microsoft 365 ecosystem, turning manual business processes into scalable, automated workflows.',
+      'Consultant specializing in building automations and AI agents using Azure AI Foundry and the Microsoft 365 ecosystem, with hands-on experience in MCP servers, vectorisation and indexing via Azure AI Search.',
     impact: [
-      'Built AI agents and automations that replaced repetitive manual work for clients',
+      'Built AI agents in Azure AI Foundry with RAG pipelines using Azure AI Search for vectorisation and indexing',
+      'Set up and configured MCP servers to extend AI agent capabilities',
       'Designed and implemented end-to-end Power Automate flows and AI-driven solutions',
       'Translated complex business requirements into automated M365 workflows',
       'Advised customers on automation strategy and AI integration opportunities',
     ],
     metrics: [
       { label: 'Focus', value: 'Automations & AI agents' },
-      { label: 'Platform', value: 'Microsoft 365' },
+      { label: 'Platform', value: 'Microsoft 365 & Azure AI' },
     ],
     technologies: [
+      'Azure AI Foundry',
+      'Azure AI Search',
+      'MCP Servers',
       'Microsoft 365',
       'Power Automate',
       'AI Agents',
