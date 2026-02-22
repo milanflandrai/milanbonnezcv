@@ -16,7 +16,7 @@ const bootLines = [
   { text: '  SQL            [########  ] 80%', delay: 1500 },
   { text: '', delay: 1600 },
   { text: 'PROFILE LOADED:', delay: 1700 },
-  { text: '  [x] M365 Business Consultant @ Dynamate', delay: 1800 },
+  { text: '  [x] M365 Consultant @ Dynamate (Automations & AI Agents)', delay: 1800 },
   { text: '  [x] Business & IT background', delay: 1900 },
   { text: '  [x] Open to interesting opportunities', delay: 2000 },
   { text: '', delay: 2100 },
